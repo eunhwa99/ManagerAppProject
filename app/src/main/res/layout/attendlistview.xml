@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/prev_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/left"
+            android:clickable="true"
+            android:onClick="preday"
+            app:backgroundTint="#EDB335"
+            />
+
+        <TextView
+            android:id="@+id/today_date"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="출석 체크"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/next_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/right"
+            android:clickable="true"
+            android:onClick="nextday"
+            app:backgroundTint="#EDB335"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="검색 : "
+            android:textSize="22dp"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/edittxt"
+            android:hint="이름을 입력하세요."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:layout_weight="5"
+            />
+
+
+        <Button
+            android:id="@+id/attend_btn"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:onClick="clicked_attend"
+            android:text="출석"
+            android:textSize="22dp"
+            app:backgroundTint="#EDB335" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="명단"
+            android:background="@drawable/border_right"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="등원시각"
+            android:gravity="center"
+            android:background="@drawable/border_right"/>
+
+        <ImageView
+            android:id="@+id/check_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_baseline_event_available_24"
+            android:scaleType="centerInside"
+            android:background="@drawable/border_right"/>
+
+        <ImageView
+            android:id="@+id/check_message"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_baseline_email_24"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:choiceMode="multipleChoice"
+            android:textFilterEnabled="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/show_memo"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text=""
+            android:gravity="center"
+            android:hint="메모를 입력하세요"/>
+        <Button
+            android:id="@+id/add_memo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="+"
+            android:textSize="22dp"
+            app:backgroundTint="#EDB335" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/attendlist"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:text=" "
+            android:textSize="25dp"
+            android:background="@drawable/border_right"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:text=" "
+            android:textSize="25dp"
+            android:gravity="center"
+            android:background="@drawable/border_right"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>

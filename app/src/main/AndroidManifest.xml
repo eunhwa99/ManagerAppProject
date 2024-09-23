@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobileteam.A_manager">
+
+    <application
+        android:name="com.mobileteam.A_manager.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NewApp">
+        <activity android:name="com.mobileteam.A_manager.sign.login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobileteam.A_manager.sign.find_id"></activity>
+        <activity android:name="com.mobileteam.A_manager.sign.Register"></activity>
+        <activity android:name="com.mobileteam.A_manager.sign.SetUp"></activity>
+
+        <activity android:name="com.mobileteam.A_manager.calendar_page.popup_activity" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="com.mobileteam.A_manager.calendar_page.calendar"></activity>
+
+        <activity android:name="com.mobileteam.A_manager.listview.studentList"></activity>
+        <activity android:name="com.mobileteam.A_manager.listview.attenList"></activity>
+        <activity android:name="com.mobileteam.A_manager.listview.paymentList"></activity>
+        <activity android:name="com.mobileteam.A_manager.explain.explain_main"></activity>
+        <activity android:name="com.mobileteam.A_manager.info.add_std"></activity>
+        <activity android:name="com.mobileteam.A_manager.MainActivity"></activity>
+    </application>
+
+</manifest>

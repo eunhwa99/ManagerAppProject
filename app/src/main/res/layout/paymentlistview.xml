@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:id="@+id/edittxt"
+            android:hint="이름을 입력하세요."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/prev_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/left"
+                android:clickable="true"
+                android:onClick="premon"
+                app:backgroundTint="#EDB335"
+                />
+
+              <TextView
+             android:id="@+id/payment_month"
+             android:layout_width="0dp"
+             android:layout_weight="4"
+             android:layout_height="wrap_content"
+             android:text="test"
+             android:layout_gravity="center"
+             android:gravity="center"
+              />
+
+            <Button
+                android:id="@+id/next_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/right"
+                android:clickable="true"
+                android:onClick="nextmon"
+                app:backgroundTint="#EDB335"
+                />
+</LinearLayout>
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:onClick="reset"
+            android:text="리셋"
+            app:backgroundTint="#EDB335"/>
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:onClick="save"
+            android:text="저장"
+            app:backgroundTint="#EDB335"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/payment_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="multipleChoice"
+        android:textFilterEnabled="true" />
+</LinearLayout>

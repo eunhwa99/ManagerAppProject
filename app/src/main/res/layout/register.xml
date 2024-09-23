@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:passwordToggleEnabled="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="65dp"
+            android:text="회원가입"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/academyEt"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="24dp"
+            android:ems="10"
+            android:hint="학원/교습소 이름 입력"
+            android:inputType="text"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/academyEt"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="24dp"
+            android:ems="10"
+            android:hint="이름 입력"
+            android:inputType="textPersonName"
+            android:layout_centerHorizontal="true" />
+
+
+        <EditText
+            android:id="@+id/idEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameEt"
+            android:layout_marginBottom="24dp"
+            android:ems="10"
+            android:hint="이메일 형식으로 입력"
+            android:inputType="textEmailAddress"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/passwordEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idEt"
+            android:layout_marginBottom="24dp"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/passwordcheckEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordEdt"
+            android:ems="10"
+            android:hint="비밀번호 확인"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/check_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordcheckEdt"
+            app:backgroundTint="#EDB335"
+            app:rippleColor="#EDB335"
+            android:layout_centerHorizontal="true"
+            android:text="확인" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_below="@id/check_button"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#EDB335"
+                app:rippleColor="#EDB335"
+                android:text="취소" />
+
+            <Button
+                android:id="@+id/join_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                app:backgroundTint="#EDB335"
+                app:rippleColor="#EDB335"
+                android:text="가입" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

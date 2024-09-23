@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="30dp"
+        android:text="출석 체크"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:src="@drawable/exp_3"
+        android:background="@drawable/border"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:textSize="20dp"
+        android:text="출석 체크 화면입니다.\n당일 온 학생들을 체크하고 출석 버튼을 누르면 출석이 완료된답니다. \n간단한 메모도 할 수 있고, 화살표로 이전 결제 정보도 확인할 수 있습니다."
+        android:gravity="center"/>
+
+</LinearLayout>

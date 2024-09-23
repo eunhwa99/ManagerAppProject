@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv_lastmonth"
+                android:src="@drawable/lastmonth"
+                android:clickable="true"
+                android:onClick="lastMonth"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/tv_date"
+                android:gravity="center"
+                android:textSize="30sp"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv_nextmonth"
+                android:src="@drawable/nextmonth"
+                android:clickable="true"
+                android:onClick="nextMonth"/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:drawSelectorOnTop="true"
+            android:listSelector="#647CFF"
+            android:numColumns="7"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="40dp">
+
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button android:id="@+id/list_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학생명단"
+            android:clickable="true"
+            android:onClick="attend" />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+
+        <Button android:id="@+id/attend_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="출석체크"
+            android:clickable="true"
+            android:onClick="attend" />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+
+        <Button android:id="@+id/money_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="payment"
+            android:text="결제관리"/>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+
+        <Button android:id="@+id/setup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="goSetUp"
+            android:text="설정"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

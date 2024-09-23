@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/payment_listview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+                <TextView
+                    android:id="@+id/attend_std_id"
+                    android:layout_width="1dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/payment_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=" "
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/pay_day"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/pay_money"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="20sp"/>
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/payment_checkBox"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/payment_send_message"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:src="@drawable/send"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"
+                    android:padding="3dp"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

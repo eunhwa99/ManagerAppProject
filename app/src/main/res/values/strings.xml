@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">A매니저</string>
+    <string name="test">TEST1</string>
+    <string name="left"><![CDATA[<]]></string>
+    <string name="right"><![CDATA[>]]></string>
+
+
+</resources>
