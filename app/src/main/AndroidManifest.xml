@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewApp">
-        <activity android:name="com.mobileteam.A_manager.sign.login">
+        <activity android:name="com.mobileteam.A_manager.sign.login"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
