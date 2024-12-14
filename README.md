@@ -1,7 +1,17 @@
 # Android Application
 
-- Team Project in the 2nd year of my bachelor's degree
-- application for managing students of Korean academies
+- Android App Project in 2021
+
+## Function
+- Application for managing students of Korean academies
   - Manage attendance
   - Manage student lists
   - Manage payments of students
+
+## Tech Stack
+### Library
+- [Firebase](https://github.com/firebase)
+- [material-components](https://github.com/material-components/material-components-android)
+
+### Database
+- Firebase
